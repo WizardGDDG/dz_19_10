@@ -1,0 +1,25 @@
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    string L;
+    int sum = 0;
+    string a;
+    cout << "Введите число: ";
+    cin >> L;
+    
+    
+    for(int i = 0; i < L.length(); i++)
+    {
+        a = L[i];
+        sum += stoi(a);
+        
+    }
+    
+    cout << sum;
+    
+    
